@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif; /* Nueva fuente */
+    background-color: #1264b1; /* Fondo negro para resaltar los colores neón */
+    color: #ffffff; /* Texto blanco para mejor contraste */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #ff1493; /* Color rosa neón */
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    color: #00ffff; /* Color verde neón */
+}
+
+p {
+    font-size: 18px;
+    color: #5a1d5a; /* Color fucsia neón */
+}
+
+.hit-the-floor {
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    }
+    
+    .hit-the-floor {
+      text-align: center;
+    }
+    
+    body {
+      background-color: #f1f1f1;
+    }
+
+
+
+
+/* Contenedor del juego */
+.game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Aumentar el espacio entre las imágenes y el tablero */
+    margin: 20px auto;
+}
+
+/* Imagenes laterales */
+.side-image {
+    width: 300px; /* Doble del tamaño original */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Tablero de juego */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* 4 columnas */
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #00ffff; /* Color cyan neón */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.card img {
+    width: 80%;
+    height: 80%;
+    display: none; /* Ocultar imagen por defecto */
+}
+
+.card.flipped img {
+    display: block; /* Mostrar imagen cuando esté volteada */
+}
+
+/* Botón de reinicio */
+footer {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #f81391; /* Color naranja neón */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6347; /* Color rojo tomate */
+}
+
